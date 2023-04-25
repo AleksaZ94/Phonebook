@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1682442287 source:c:\users\aleksa\desktop\phonebook\phonebook\menu.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"menu.h"
+	"user.h"
+	"main_functions.h"
+	"secondary_functions.h"
+
+1682442742 source:c:\users\aleksa\desktop\phonebook\phonebook\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"user.h"
+	"main_functions.h"
+	"secondary_functions.h"
+
+1682434424 c:\users\aleksa\desktop\phonebook\phonebook\menu.h
+
+1682448114 c:\users\aleksa\desktop\phonebook\phonebook\user.h
+
+1682436458 c:\users\aleksa\desktop\phonebook\phonebook\main_functions.h
+
+1682447284 source:c:\users\aleksa\desktop\phonebook\phonebook\main_functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"user.h"
+	"secondary_functions.h"
+
+1682447278 c:\users\aleksa\desktop\phonebook\phonebook\secondary_functions.h
+
+1682447284 source:c:\users\aleksa\desktop\phonebook\phonebook\secondary_functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"user.h"
+	"main_functions.h"
+	"secondary_functions.h"
+
