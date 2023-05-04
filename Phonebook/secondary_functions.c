@@ -8,7 +8,15 @@
 
 void exit_or_menu()
 {
-    printf("Enter 1 to go in main menu or 0 do exit the app: ");
+    if(function_chooser == THREE)
+    {
+        printf("Enter 1 to go in main menu or 0 do exit the app: ");
+    }
+    else
+    {
+       system("cls");
+       printf("Enter 1 to go in main menu or 0 do exit the app: ");
+    }
     scanf("%d", &choice);
     if(choice == 1)
     {
@@ -44,8 +52,39 @@ void update_the_list()
     }
     while(temp != NULL)
     {
-        fprintf(f,"%s %lu %s %s\n", temp->name, temp->phone_num, temp->address, temp->email);
+        fprintf(f,"%s %s %lu %s %s\n", temp->name, temp->surname, temp->phone_num, temp->address, temp->email);
         temp = temp->next;
     }
     fclose(f);
+}
+
+void try_again()
+{
+    printf("Do you want to try again?\n");
+    printf("[1] YES    [0] NO\n");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+    case 1:
+        if(function_chooser == ZERO)
+        {
+          search_for_contact();
+        }
+        else if(function_chooser == FIRST)
+        {
+            edit_contact();
+        }
+        else if(function_chooser == TWO)
+        {
+            delete_contact();
+        }
+        break;
+    case 0:
+        exit_or_menu();
+        break;
+    default:
+        printf("Wrong input!\n");
+        exit_app();
+        break;
+    }
 }

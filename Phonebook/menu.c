@@ -27,6 +27,18 @@ void menu()
         system("cls");
         list_of_users();
         break;
+     case 3:
+        system("cls");
+        search_for_contact();
+        break;
+     case 4:
+        system("cls");
+        edit_contact();
+        break;
+     case 5:
+        system("cls");
+        delete_contact();
+        break;
      default:
         system("cls");
         printf("Wrong input!\n");

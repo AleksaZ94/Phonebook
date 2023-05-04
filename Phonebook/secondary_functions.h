@@ -4,5 +4,6 @@
 void exit_or_menu();
 void exit_app();
 void update_the_list();
+void try_again();
 
 #endif
