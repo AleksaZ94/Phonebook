@@ -1,2 +1,2 @@
 # Phonebook
-Aplikacija koja simulira mini telefonski imenik.
+An application that simulates a mini telephone directory.
